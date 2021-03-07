@@ -512,7 +512,7 @@ html body img {
   padding: 40px 0;
   padding-left: clamp(10px, 90vw, 20px);
   padding-right: clamp(10px, 90vw, 20px);
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, calc(1rem + 3vw), 1.6rem);
   line-height: 2.2;
 }
 

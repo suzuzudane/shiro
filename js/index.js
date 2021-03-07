@@ -49,6 +49,12 @@
     function menuClick() {
       // クリックした際に実行する処理
       document.querySelector(".menu").classList.toggle("menu--on");
+      document
+        .querySelector(".navigation__icon--line")
+        .classList.toggle("navigation__icon--line--on");
+      document
+        .querySelector(".navigation__icon")
+        .classList.toggle("navigation__icon--on");
     }
     // 引数に指定したclassの値をもつ要素をすべて取得
     const menus = document.getElementsByClassName("list__pageLink");

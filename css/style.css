@@ -481,12 +481,6 @@ html body img {
   height: auto;
 }
 
-.section {
-  position: relative;
-  padding-bottom: clamp(20px, 8vh, 80px);
-  text-align: center;
-}
-
 .section__title {
   display: inline-block;
   position: relative;
@@ -494,7 +488,7 @@ html body img {
   padding-left: clamp(10px, 90vw, 20px);
   padding-right: clamp(10px, 90vw, 20px);
   font-family: Poppins;
-  font-size: clamp(2.8rem, 3vw, 3.6rem);
+  font-size: clamp(2.8rem, calc(1rem + 3vw), 3.6rem);
   font-weight: bold;
 }
 
@@ -775,6 +769,12 @@ html body img {
             transform: translateY(0);
     opacity: 1;
   }
+}
+
+.section {
+  position: relative;
+  padding-bottom: clamp(20px, 10vh, 80px);
+  text-align: center;
 }
 
 .section--bg {
